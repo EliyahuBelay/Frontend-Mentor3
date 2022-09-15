@@ -9,7 +9,7 @@ body{
     background-color: hsl(217, 54%, 11%);
     display: grid;
     grid-template-columns: 23%;
-    grid-template-rows:75%;
+    grid-template-rows:80%;
     align-content: center;
     justify-content: center;
 }
@@ -34,39 +34,55 @@ body{
 }
 
 .headline{
-    height: 4.5%;
+    height: 3.5%;
     width: 85%;
+    font-family: 'Outfit', sans-serif;
+    color:hsl(0, 0%, 100%);
     /* font-size: 18px; */
 }
 .paragraph{
-    height: 4.5%;
+    height: 3.5%;
     width: 85%;
     font-size: 18px;
+    font-family: 'Outfit', sans-serif;
 }
 .numbers_container{
-    height: 4.5%;
+    height: 3.5%;
     width: 85%;
     display: flex;
+    justify-content: space-around;
+    font-family: 'Outfit', sans-serif;
 }
-.numbers_container div{
+.numbers_container span img{
+    /* margin-left: 2px; */
+    width:11px;
+    height:18px;
+}
+.numbers_container span .clock{
+    width: 17px;
+    height: 17px;
+}
+/* .numbers_container div{
     display: flex;
-}
-.numbers_container div img{
+} */
+.numbers_container img{
     width:17px; 
     height:17px;
 }
-hr{
+.line{
     width: 85%;
+    height: 0.1%;
     background-color: hsl(215, 51%, 70%);
-    border:solid 1px hsl(215, 51%, 70%);
-    border-radius: 1px;
+    /* border:solid 1px hsl(215, 51%, 70%);
+    border-radius: 1px; */
 }
 .avatar_and_info_container{
-    height: 4.5%;
+    height: 3.5%;
     width: 85%;
     font-size: 18px;
     display: flex;
     flex-direction: row;
+    font-family: 'Outfit', sans-serif;
 }
 .avatar{
     width: 10px;
