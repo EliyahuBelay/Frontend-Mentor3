@@ -23,11 +23,33 @@ body{
     align-items: center;
     flex-direction: column;
 }
-.card_container .equilibrium_pic{
+.card_container .equilibrium_pic_container{
     width: 85%;
     height: 48%;
-    border-radius: 8px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 10px;
 }
+.card_container .equilibrium_pic{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    position: relative;
+}
+.card_container .equilibrium_pic:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.card_container .equilibrium_pic:hover ~ .icon_view{
+    display: block;
+}
+.card_container .icon_view{
+    display: none;
+    position: absolute;
+}
+
 
 .headline{
     height: 3%;
@@ -36,7 +58,10 @@ body{
     color:hsl(0, 0%, 100%);
     margin-top: 0;
 }
-
+.headline:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
 .paragraph{
     height: 5%;
     width: 85%;
@@ -44,7 +69,6 @@ body{
     font-weight:lighter;
     font-family: 'Outfit', sans-serif;
     margin-top: -18px;
-    color: hsl(215, 51%, 70%);
     color: hsl(215, 51%, 70%);
 }
 
@@ -108,4 +132,8 @@ body{
 }
 .avatar_and_info_container .text_near_avatar .name{
     color: hsl(0, 0%, 100%);
+}
+.avatar_and_info_container .text_near_avatar .name:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
