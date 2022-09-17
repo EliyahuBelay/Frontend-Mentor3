@@ -9,82 +9,103 @@ body{
     background-color: hsl(217, 54%, 11%);
     display: grid;
     grid-template-columns: 23%;
-    grid-template-rows:80%;
+    grid-template-rows:84%;
     align-content: center;
     justify-content: center;
 }
+
 .card_container{
     background-color: hsl(216, 50%, 16%);
     border-radius: 11px;
-    /* display: grid; */
-    /* grid-template-rows: 55% 5.5% 5.5% 5.5% 1px 5.5%;  */
-    /* text-align: center; */
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
 }
-.card_container .equilibrium{
+.card_container .equilibrium_pic{
     width: 85%;
-    height: 55%;
+    height: 48%;
     border-radius: 8px;
-    /* margin-right: 7.5%; */
-    /* margin-left: 7.5%; */
 }
 
 .headline{
-    height: 3.5%;
+    height: 3%;
     width: 85%;
     font-family: 'Outfit', sans-serif;
     color:hsl(0, 0%, 100%);
-    /* font-size: 18px; */
+    margin-top: 0;
 }
+
 .paragraph{
-    height: 3.5%;
+    height: 5%;
     width: 85%;
     font-size: 18px;
+    font-weight:lighter;
     font-family: 'Outfit', sans-serif;
+    margin-top: -18px;
+    color: hsl(215, 51%, 70%);
+    color: hsl(215, 51%, 70%);
 }
+
+
 .numbers_container{
-    height: 3.5%;
+    height: 5%;
     width: 85%;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     font-family: 'Outfit', sans-serif;
 }
-.numbers_container span img{
+.numbers_container .container_amount , .numbers_container .container_time {
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+}
+.numbers_container .container_amount .ethereum_icon{
     /* margin-left: 2px; */
     width:11px;
     height:18px;
 }
-.numbers_container span .clock{
+.numbers_container .container_amount .text_near_ethereum_icon{
+    color: hsl(178, 100%, 50%);
+    display: inline;
+}
+.numbers_container .container_time .clock_icon{
     width: 17px;
     height: 17px;
 }
-/* .numbers_container div{
-    display: flex;
-} */
-.numbers_container img{
-    width:17px; 
-    height:17px;
+.numbers_container .container_time .text_near_clock_icon{
+    color: hsl(215, 51%, 70%);
 }
+
+
 .line{
     width: 85%;
     height: 0.1%;
-    background-color: hsl(215, 51%, 70%);
-    /* border:solid 1px hsl(215, 51%, 70%);
-    border-radius: 1px; */
+    background-color: hsl(215, 32%, 27%);
 }
+
+
 .avatar_and_info_container{
-    height: 3.5%;
+    height: 5%;
     width: 85%;
     font-size: 18px;
     display: flex;
-    flex-direction: row;
     font-family: 'Outfit', sans-serif;
 }
 .avatar{
-    width: 10px;
-    height: 10px;
+    width: 25px;
+    height: 25px;
+    margin-top: 4px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 15px;
+}
+.avatar_and_info_container .text_near_avatar{
+    font-size: 17px;
+    color: hsl(215, 51%, 70%);
+    margin-left: 15px;
+    margin-top: 7px;
+}
+.avatar_and_info_container .text_near_avatar .name{
+    color: hsl(0, 0%, 100%);
 }
