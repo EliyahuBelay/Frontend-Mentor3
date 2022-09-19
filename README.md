@@ -48,7 +48,7 @@ Users should be able to:
 
 I sharping my design skills and maneged to combine more and more properties at once
 
-
+css
 ```css
 .card_container .equilibrium_pic:hover ~ .icon_view{
     display: block;
