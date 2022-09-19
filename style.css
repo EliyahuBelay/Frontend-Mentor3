@@ -87,7 +87,6 @@ body{
     justify-content: space-between;
 }
 .numbers_container .container_amount .ethereum_icon{
-    /* margin-left: 2px; */
     width:11px;
     height:18px;
 }
